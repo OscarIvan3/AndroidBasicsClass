@@ -53,6 +53,16 @@ fun AppNavigation() {
             composable(AppRoute.Settings.route) {
                 SettingsView()
             }
+            composable(AppRoute.Pantalla2.route) {
+                Pantalla2View()
+            }
+            composable(AppRoute.pantalla3.route) {
+                Pantalla3View()
+            }
+            composable(AppRoute.pantalla4.route) {
+                Pantalla4View()
+            }
+
         }
     }
 }
@@ -60,4 +70,19 @@ fun AppNavigation() {
 @Composable
 fun SettingsView() {
     Text(text = "Pantalla de Ajustes")
+}
+
+@Composable
+fun Pantalla2View() {
+    Text(text = "Pantalla 2")
+}
+
+@Composable
+fun Pantalla3View() {
+    Text(text = "Pantalla 3")
+}
+
+@Composable
+fun Pantalla4View() {
+    Text(text = "Pantalla 4")
 }

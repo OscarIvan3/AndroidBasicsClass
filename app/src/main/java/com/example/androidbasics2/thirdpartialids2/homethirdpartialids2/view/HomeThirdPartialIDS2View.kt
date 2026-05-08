@@ -9,9 +9,6 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androidbasics2.thirdpartialids2.homethirdpartialids2.viewmodel.HomeThirdPartialIDS2ViewModel
 
-/**
- * Pantalla principal de la funcionalidad ThirdPartialIDS2.
- */
 @Composable
 fun HomeThirdPartialIDS2View(
     viewModel: HomeThirdPartialIDS2ViewModel = viewModel()
@@ -20,6 +17,6 @@ fun HomeThirdPartialIDS2View(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text(text = "Bienvenido a IDS2 P3")
+        Text(text = "Pantalla Principal")
     }
 }
