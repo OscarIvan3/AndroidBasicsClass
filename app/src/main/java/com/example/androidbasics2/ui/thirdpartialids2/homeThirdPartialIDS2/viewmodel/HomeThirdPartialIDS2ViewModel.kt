@@ -1,4 +1,4 @@
-package com.example.androidbasics2.thirdpartialids2.homethirdpartialids2.viewmodel
+package com.example.androidbasics2.ui.thirdpartialids2.homeThirdPartialIDS2.viewmodel
 
 import androidx.lifecycle.ViewModel
 
