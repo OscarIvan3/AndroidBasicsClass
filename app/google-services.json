@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "103404203785",
+    "project_id": "androidbasics2",
+    "storage_bucket": "androidbasics2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103404203785:android:e8fa0aa0cc3d9cd6d16dd8",
+        "android_client_info": {
+          "package_name": "com.example.androidbasics2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo12X4d2SEq1bgYKry6_RGo9H5zH9vVZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
