@@ -1,4 +1,4 @@
-package com.example.androidbasics2.ui.login.loginview.viewmodel
+package com.example.androidbasics2.ui.login.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

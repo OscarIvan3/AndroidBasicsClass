@@ -11,7 +11,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.androidbasics2.ui.login.loginview.view.LoginView
+import com.example.androidbasics2.ui.login.view.LoginView
+import com.example.androidbasics2.ui.thirdpartialids2.firstApiRequest.view.FirstApiRequestView
 import com.example.androidbasics2.ui.thirdpartialids2.homeThirdPartialIDS2.view.HomeThirdPartialIDS2View
 
 @Composable
@@ -60,7 +61,18 @@ fun AppNavigation() {
                 })
             }
             composable(AppRoute.ThirdPartialIDS2.route) {
-                HomeThirdPartialIDS2View()
+                HomeThirdPartialIDS2View(onNavigateToApi = {
+                    navController.navigate(AppRoute.FirstApiRequest.route) {
+                        popUpTo(navController.graph.findStartDestination().id) {
+                            saveState = true
+                        }
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                })
+            }
+            composable(AppRoute.FirstApiRequest.route) {
+                FirstApiRequestView()
             }
             composable(AppRoute.PersonalInfo.route) {
                 PersonalInfoView()

@@ -1,22 +1,30 @@
 package com.example.androidbasics2.ui.thirdpartialids2.homeThirdPartialIDS2.view
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androidbasics2.ui.thirdpartialids2.homeThirdPartialIDS2.viewmodel.HomeThirdPartialIDS2ViewModel
 
 @Composable
 fun HomeThirdPartialIDS2View(
-    viewModel: HomeThirdPartialIDS2ViewModel = viewModel()
+    viewModel: HomeThirdPartialIDS2ViewModel = viewModel(),
+    onNavigateToApi: () -> Unit
 ) {
-    Box(
+    Column(
         modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Pantalla Principal")
+        Text(text = "hoola mundo", style = MaterialTheme.typography.headlineMedium)
+        
+        Spacer(modifier = Modifier.height(24.dp))
+        
+        Button(onClick = onNavigateToApi) {
+            Text(text = "La api aña uwu")
+        }
     }
 }

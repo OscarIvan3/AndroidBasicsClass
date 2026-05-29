@@ -1,4 +1,5 @@
-package com.example.androidbasics2.ui.login.loginview.model
+package com.example.androidbasics2.ui.login.model
+
 data class UserCredentials(
     val username: String,
     val token: String

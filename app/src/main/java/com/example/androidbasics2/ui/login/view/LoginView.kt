@@ -1,4 +1,4 @@
-package com.example.androidbasics2.ui.login.loginview.view
+package com.example.androidbasics2.ui.login.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -11,7 +11,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androidbasics2.R
-import com.example.androidbasics2.ui.login.loginview.viewmodel.LoginViewModel
+import com.example.androidbasics2.ui.login.viewmodel.LoginViewModel
 
 @Composable
 fun LoginView(
