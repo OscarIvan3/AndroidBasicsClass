@@ -1,9 +1,12 @@
 package com.example.androidbasics2.ui.navigation
 
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -80,7 +83,20 @@ fun AppNavigation() {
             composable(AppRoute.Settings.route) {
                 SettingsView()
             }
+            composable(AppRoute.Page3.route) {
+                AyudaView()
+            }
         }
+    }
+}
+
+@Composable
+fun AyudaView() {
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = "Pantalla de Ayuda")
     }
 }
 

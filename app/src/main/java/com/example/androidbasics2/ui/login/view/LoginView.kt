@@ -26,8 +26,8 @@ fun LoginView(
         verticalArrangement = Arrangement.Center
     ) {
         Image(
-            painter = painterResource(id = R.drawable.logo_la_salle),
-            contentDescription = "Logo La Salle",
+            painter = painterResource(id = R.drawable.finislogo),
+            contentDescription = "Logo Finis",
             modifier = Modifier.size(200.dp)
         )
 

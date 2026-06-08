@@ -19,12 +19,9 @@ fun HomeThirdPartialIDS2View(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "hoola mundo", style = MaterialTheme.typography.headlineMedium)
+        Text(text = "Revisar Finanzas", style = MaterialTheme.typography.headlineMedium)
         
         Spacer(modifier = Modifier.height(24.dp))
-        
-        Button(onClick = onNavigateToApi) {
-            Text(text = "La api aña uwu")
+
         }
     }
-}
